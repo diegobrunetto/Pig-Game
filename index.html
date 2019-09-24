@@ -6,8 +6,19 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/d475e50bd6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
     <title>Pig Game</title>
 </head>
@@ -32,13 +43,46 @@
             </div>
         </div>
 
-        <button class="btn-new"><i class="fas fa-plus"></i>New game</button>
-        <button class="btn-roll"><i class="fas fa-dice"></i>Roll dice</button>
-        <button class="btn-hold"><i class="fas fa-piggy-bank"></i>Hold</button>
+        <button class="btn-new button"><i class="fas fa-plus"></i>New game</button>
+        <button class="btn-roll button"><i class="fas fa-dice"></i>Roll dice</button>
+        <button class="btn-hold button"><i class="fas fa-piggy-bank"></i>Hold</button>
 
         <img src="dice-6.png" alt="Dice" class="dice">
     </div>
 
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+        Game rules
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Game Rules:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><i class="far fa-check-circle fa-lg"></i>The game has 2 players, playing in rounds</p>
+                    <p><i class="far fa-check-circle fa-lg"></i>In each turn, a player rolls a dice as many times as he
+                        whishes. Each result get added to his current score.</p>
+                    <p><i class="far fa-check-circle fa-lg"></i>If the player rolls a 1, all his current score gets
+                        lost.</p>
+                    <p><i class="far fa-check-circle fa-lg"></i>The player can choose to 'Hold' to add the current score
+                        to his global score.</p>
+                    <p><i class="far fa-check-circle fa-lg"></i>The first player to reach 100 global points score wins
+                        the game.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Let's play ! </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 
 </body>
