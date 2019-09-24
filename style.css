@@ -223,7 +223,7 @@ i {
 
 @media only screen and (max-width: 500px) {
     .wrapper {
-        top: 80%;
+        top: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
