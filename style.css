@@ -220,7 +220,7 @@ i {
 
 @media only screen and (max-width: 500px) {
     .wrapper {
-        top: 380px;
+        top: 330px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -231,12 +231,12 @@ i {
     .player-0-panel,
     .player-1-panel {
         width: 100%;
-        height: 250px;
+        height: 190px;
         padding: 10px
     }
 
     .player-1-panel {
-        margin-bottom: 170px
+        margin-bottom: 180px
     }
 
     .active .player-name::after {
@@ -279,7 +279,7 @@ i {
     }
 
     .dice {
-        top: 500px;
+        top: 400px;
         height: 80px;
         box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.26);
     }
@@ -287,7 +287,7 @@ i {
     .btn-new,
     .btn-hold,
     .btn-roll {
-        top: 600px;
+        top: 500px;
     }
 
     .btn-new {
