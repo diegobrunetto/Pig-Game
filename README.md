@@ -2,7 +2,7 @@
 
  DOM manipulation exercise
  
-## 🎨 You can play [here](https://diegobrunetto.github.io/Pig-Game/)
+## 🎨 You can play [here](https://diegobrunetto.github.io/dice-game/)
 
 ## Technology
 
