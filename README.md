@@ -1,7 +1,12 @@
-# Pig Game
-### DOM manipulation exercise
+# ✨  Pig Game
 
-#### You can play here! : https://diegobrunetto.github.io/Pig-Game/
+ DOM manipulation exercise
+ 
+## 🎨 You can play [here](https://diegobrunetto.github.io/Pig-Game/)
+
+## Technology
+
+HTML - CSS - JS
 
 ### GAME RULES:
 
